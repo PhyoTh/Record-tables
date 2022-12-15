@@ -1,4 +1,3 @@
-
 # Work Report
 
 ## Name: <ins> your name goes here </ins>
@@ -21,7 +20,7 @@
 <br><br>
 
 - Bugs
-  - Known bugs
+  - can't delete all the files after selecting the table
 
 <br><br>
 
@@ -30,21 +29,22 @@
 - Any thoughts you may have and would like to share.
 
 # **output**
+
 <pre>
 <br/><br/><br/><br/>
 ## Delete this line and paste the output of your basic test and then testB here
 </pre>
 
-
 <br/><br/>
 
 # basic_test.cpp output:
+
 <pre>
 <br/><br/><br/><br/>
 </pre>
+
 # testB.cpp output:
+
 <pre>
 <br/><br/><br/><br/>
 </pre>
-
-
