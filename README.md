@@ -1,5 +1,5 @@
 # Record-tables
-Not just a regular tic-tac-toe game, same logics applied but players ranging from 3 to 10
+This project includes binary files, bplustree, double linked list, stack, queue, parser, shunting yard, rpn, tokenizer, and sql
 <br><br>
 
 - Bugs
