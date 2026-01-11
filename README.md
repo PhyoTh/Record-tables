@@ -3,14 +3,6 @@ A lightweight C++ record/table engine with a minimal SQL-like query pipeline, B+
 
 Demo video: https://youtu.be/2pizsEKHbJU
 
-## At a glance (recruiter-friendly)
-- Systems programming in modern C++ (C++11) with CMake
-- End-to-end query flow: Tokenizer → Shunting-yard parser → RPN evaluation
-- Indexing with a B+ tree for logarithmic lookups
-- Purpose-built data structures: doubly linked list, stack, queue
-- Binary on-disk storage for tables
-- Unit tests with GoogleTest (fetched automatically)
-
 ## Key features
 - Binary storage engine: Persists table data to disk using compact binary files.
 - SQL-like mini-language: Tokenizes, parses (shunting-yard), and evaluates expressions in Reverse Polish Notation.
@@ -82,22 +74,6 @@ See main.cpp for concrete examples of constructing and running queries.
 
 ## Known issues
 - Cannot delete all files after selecting a table.
-
-## Roadmap
-- Improve delete/cleanup semantics for tables and associated index files
-- Expand the query language (projection, joins, aggregation)
-- Add schema management and metadata catalogs
-- Strengthen persistence, recovery, and durability guarantees
-- Increase test coverage and add CI
-
-## What this project demonstrates
-- Practical systems design: file I/O, binary formats, and indexing
-- Compiler techniques in miniature: tokenization, precedence parsing, and stack-based evaluation
-- Algorithmic rigor: balanced tree structures and complexity-aware design
-- Engineering hygiene: unit testing with GoogleTest and CMake-driven builds
-
-## Demo
-Watch the engine in action: https://youtu.be/2pizsEKHbJU
 
 ## Author
 Maintainer: @PhyoTh
