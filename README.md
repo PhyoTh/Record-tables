@@ -3,6 +3,8 @@ A lightweight C++ record/table engine with a minimal SQL-like query pipeline, B+
 
 Demo video: https://youtu.be/2pizsEKHbJU
 
+> **Hand-written (spring 2022).** Every algorithm and data structure in this repo was designed and typed by hand, before AI coding assistants were part of my workflow. AI (Claude Code) has only ever been used here for testing and benchmarking — never to write the engine. See [CLAUDE.md](CLAUDE.md) for the full provenance note.
+
 ## Key features
 - Binary storage engine: Persists table data to disk using compact binary files.
 - SQL-like mini-language: Tokenizes, parses (shunting-yard), and evaluates expressions in Reverse Polish Notation.

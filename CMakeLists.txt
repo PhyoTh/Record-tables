@@ -76,8 +76,14 @@ ADD_EXECUTABLE(testB
     #- - - - - - - - - - - - - - - - 
 )
 
+ADD_EXECUTABLE(invariant_test
+    _tests/_test_files/invariant_test.cpp
+    ${SOURCE_FILES}
+)
+
 TARGET_LINK_LIBRARIES(basic_test gtest)
 TARGET_LINK_LIBRARIES(testB gtest)
+TARGET_LINK_LIBRARIES(invariant_test gtest)
 
  
 
