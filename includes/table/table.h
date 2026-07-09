@@ -174,7 +174,7 @@ public:
     Table select(vectorstr field_names, const vectorstr &condition)
     // the type of fields will be given in the argument with the vectorstr conditions of info
     {
-        cout << "condition: " << condition << endl;
+        // cout << "condition: " << condition << endl;
         ShuntingYard sy(condition);
         return select(field_names, sy.postfix());
     }
@@ -265,7 +265,7 @@ public:
         }
         else
         {
-            cout << "what the hell is this: " << relation << endl;
+            // cout << "what the hell is this: " << relation << endl;
         }
         return result;
     }

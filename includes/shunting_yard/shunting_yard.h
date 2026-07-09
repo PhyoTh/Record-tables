@@ -53,8 +53,8 @@ public:
 
     Queue<Token *> postfix() // return postfix que
     {
-        cout << "this is your infix que" << endl
-             << que << endl;
+        // cout << "this is your infix que" << endl
+        //      << que << endl;
         Stack<Token *> stack;
         Queue<Token *> res;
 
@@ -105,8 +105,8 @@ public:
             if (stack.top()->TypeOf() == RELATION || stack.top()->TypeOf() == LOGIC)
                 res.push(stack.pop());
         }
-        cout << "this is your post fix que" << endl
-             << res << endl;
+        // cout << "this is your post fix que" << endl
+        //      << res << endl;
         return res;
     }
 

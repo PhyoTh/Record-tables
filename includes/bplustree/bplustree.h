@@ -486,19 +486,19 @@ bool BPlusTree<T>::is_valid() //
 {
     if (!is_leaf() && (data_count < MINIMUM || child_count != data_count + 1))
     {
-        cout << "data_count is less than minimum or child_count is not equal to data_count + 1" << endl;
+        // cout << "data_count is less than minimum or child_count is not equal to data_count + 1" << endl;
         return false;
     }
     if (data_count > MAXIMUM || child_count > MAXIMUM + 1)
     {
-        cout << "data_count or child count is not valid" << endl;
+        // cout << "data_count or child count is not valid" << endl;
         return false;
     }
     for (int i = 0; i < data_count; ++i)
     {
         if (i + 1 < data_count && data[i] > data[i + 1])
         {
-            cout << "data is not valid" << endl;
+            // cout << "data is not valid" << endl;
             return false;
         }
     }
@@ -637,7 +637,7 @@ void BPlusTree<T>::remove(const T &entry)
     loose_remove(entry);
     if (data_count == 0 && child_count == 1)
     {
-        cout << "shrinking occurs" << endl;
+        // cout << "shrinking occurs" << endl;
         BPlusTree<T> *temp = subset[0];
         copy_array(data, temp->data, data_count, temp->data_count);
         copy_array(subset, temp->subset, child_count, temp->child_count);
@@ -680,17 +680,17 @@ inline void BPlusTree<T>::loose_remove(const T &entry)
             }
             if (data_count > 0 && data[i] == entry)
             {
-                cout << "lee" << endl;
+                // cout << "lee" << endl;
                 subset[i + 1]->get_smallest(data[i]);
             }
             else if (i + 1 < child_count && subset[i + 1]->data[0] == entry)
             {
-                cout << "lee1" << endl;
+                // cout << "lee1" << endl;
                 subset[i + 1]->subset[1]->get_smallest(subset[i + 1]->data[0]);
             }
             else if (subset[i]->data[subset[i]->data_count - 1] == entry)
             {
-                cout << "lee2" << endl;
+                // cout << "lee2" << endl;
                 subset[i]->subset[subset[i]->child_count - 1]->get_smallest(subset[i]->data[subset[i]->data_count - 1]);
             }
         }
